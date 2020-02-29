@@ -1,0 +1,54 @@
+<div class="jumbotron bg-white ">
+  <a href="https://ng-bootstrap.github.io/#/components/alert/examples">
+    ng-boostrap component
+  </a>
+  examples
+</div>
+<div class="jumbotron bg-white ">
+  <h2>Dropdown</h2>
+
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button
+        class="btn btn-outline-primary"
+        id="dropdownBasic1"
+        ngbDropdownToggle
+      >
+        Toggle dropdown
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem>Action - 1</button>
+        <button ngbDropdownItem>Another Action</button>
+        <button ngbDropdownItem>Something else is here</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="jumbotron bg-white ">
+  <h2>Toggle</h2>
+
+  <p>
+    <button
+      type="button"
+      class="btn btn-outline-primary"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample"
+    >
+      Toggle
+    </button>
+  </p>
+  <div id="collapseExample" [ngbCollapse]="isCollapsed">
+    <div class="card">
+      <div class="card-body">
+        You can collapse this card by clicking Toggle
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron bg-white ">
+  <h2>Modal</h2>
+
+  <ngbd-modal-basic name="First Modal"></ngbd-modal-basic>
+</div>

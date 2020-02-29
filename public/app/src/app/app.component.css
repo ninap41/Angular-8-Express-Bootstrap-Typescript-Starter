@@ -1,0 +1,23 @@
+/* * {
+  background-color: black;
+  color: white;
+} */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.flex-fam {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.nav-fam {
+  > a {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}

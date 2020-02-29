@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style=" ">
+  <h1 class=" header  ">
+    <span>
+      <span class="text-danger">Angular 8 <img src="favicon.ico" /> </span>
+    </span>
+    <span> + <span class="text-primary">Typescript</span> </span>
+
+    <span>+ <span class="text-warning">Express</span> </span>
+    <span> + <span class="text-success">Node</span></span>
+    <span> + <span class="text-info"> Ng-Bootstrap </span></span>
+    <hr />
+  </h1>
+</div>
+<hr />
+
+<div
+  class="container flex-fam nav-fam
+"
+>
+  <a class="active" routerLinkActive="active" [routerLink]="['']"
+    >BootstrapDemo</a
+  >
+  <a class="active" routerLinkActive="active" [routerLink]="['dataDemo']"
+    >DataDemo</a
+  >
+  <a routerLinkActive="active" [routerLink]="['mongoDemo']">MongoDemo</a>
+</div>
+<hr />
+
+<router-outlet></router-outlet>
+<hr />

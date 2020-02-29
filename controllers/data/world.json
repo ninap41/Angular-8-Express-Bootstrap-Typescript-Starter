@@ -1,0 +1,12 @@
+{
+  "data": "testdata",
+  "level": "firstlevel",
+  "rooms": [
+    {
+      "description": "a description",
+      "guard": {
+        "type": "first"
+      }
+    }
+  ]
+}
