@@ -1,0 +1,25 @@
+{
+  "level_1": {
+    "id": 1,
+    "rooms": [
+      {
+        "id": "closet_1",
+        "name": "The Closet",
+        "description": "You are in a dumb closet",
+        "map": {
+          "tileSize": { "width": 300, "height": 400 },
+          "coordinates": [1, 3]
+        },
+        "hasGuard": false,
+        "hasEventUponEntry": true,
+        "event": {
+          "id": "get_key",
+          "type": "generic"
+        },
+        "inspects": [{ "id": "", "name": "", "description": "" }],
+        "directions": [{ "id": "", "name": "", "description": "" }],
+        "interchangeableRoomIds": ["closet_1", "closet_2", "closet_3"]
+      }
+    ]
+  }
+}

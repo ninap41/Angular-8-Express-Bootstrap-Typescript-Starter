@@ -11,7 +11,7 @@ import { DataService } from "./data.service";
 import { DataDemoComponent } from "./data-demo/data-demo.component";
 import { MongoDemoComponent } from "./mongo-demo/mongo-demo.component";
 import { EngineComponent } from "./engine/engine.component";
-
+import { GameTestComponent } from "./game-test/game-test.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +19,8 @@ import { EngineComponent } from "./engine/engine.component";
     NgbdModalBasic,
     DataDemoComponent,
     MongoDemoComponent,
-    EngineComponent
+    EngineComponent,
+    GameTestComponent
   ],
   imports: [BrowserModule, NgbModule, AppRoutingModule, HttpClientModule],
   providers: [DataService],

@@ -110,4 +110,34 @@ and Angular (./public/ng-app/tsconfig.json)
 - If you want to customized and support some directories, you can do so
 by updating both the .babelrc and tsconfig.json of express or angular
 ```
+
+# ThreeJS
+
+`npm install three --save`
+`npm install @types/three`
+`npm install @types/webgl2`
+
+- in `tsconfig.app.json`
+
+```
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "outDir": "./out-tsc/app",
+    "types": ["node", "webgl2"]
+  },
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/test.ts", "src/**/*.spec.ts"]
+}
+
+```
+
+`tsconfig.json` under compiler options:
+
+```
+    "skipLibCheck": true /// Needs to be true to fix wrong alias types being used
+```
+
 # Angular-8-Express-Bootstrap-Typescript-Starter
