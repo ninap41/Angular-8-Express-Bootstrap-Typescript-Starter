@@ -1,0 +1,48 @@
+/*****************************************************
+ * node_modules imports
+ *****************************************************/
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+/*****************************************************
+  * project imports
+  *****************************************************/
+$mainBgColor: black;
+$mainTextColor: #ccc;
+
+/*****************************************************
+  * styles
+  *****************************************************/
+html,
+body,
+app-root,
+app-game {
+  // overflow: hidden;
+  // width: 100%;
+  // height: 100%;
+  // margin: 0;
+  // padding: 0;
+}
+
+body {
+}
+
+.engine-wrapper {
+  background-color: $mainBgColor;
+  color: $mainTextColor;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  #renderCanvas {
+    // width: 100%;
+    // height: 100%;
+    // touch-action: none;
+  }
+
+  #renderCanvas:focus {
+    outline: none;
+  }
+}

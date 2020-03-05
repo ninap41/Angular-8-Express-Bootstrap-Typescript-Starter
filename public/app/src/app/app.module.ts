@@ -8,11 +8,19 @@ import { HttpClientModule } from "@angular/common/http";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { NgbdModalBasic } from "./modal-basic/modal-basic.component";
 import { DataService } from "./data.service";
-import { DataDemoComponent } from './data-demo/data-demo.component';
-import { MongoDemoComponent } from './mongo-demo/mongo-demo.component';
+import { DataDemoComponent } from "./data-demo/data-demo.component";
+import { MongoDemoComponent } from "./mongo-demo/mongo-demo.component";
+import { EngineComponent } from "./engine/engine.component";
 
 @NgModule({
-  declarations: [AppComponent, NgBootstrapDemoComponent, NgbdModalBasic, DataDemoComponent, MongoDemoComponent],
+  declarations: [
+    AppComponent,
+    NgBootstrapDemoComponent,
+    NgbdModalBasic,
+    DataDemoComponent,
+    MongoDemoComponent,
+    EngineComponent
+  ],
   imports: [BrowserModule, NgbModule, AppRoutingModule, HttpClientModule],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+{
+  "The House": {
+    "svg_background": "gray",
+
+    "size": {
+      "width": "500px",
+      "height": "500px"
+    },
+    "tiles": []
+  }
+}

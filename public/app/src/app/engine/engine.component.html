@@ -1,0 +1,8 @@
+<div class="engine-wrapper">
+  <button (click)="engServ.incrementXRotation(0.1)">Rotate X</button>
+  <button (click)="engServ.incrementYRotation(0.1)">Rotate Y</button>
+  <button (click)="engServ.moveRight(0.1)">Move Right</button>
+  <button (click)="engServ.moveLeft(0.1)">Move Left</button>
+
+  <canvas #rendererCanvas id="renderCanvas"></canvas>
+</div>
